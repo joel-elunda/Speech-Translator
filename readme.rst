@@ -3,9 +3,9 @@ Speech Translator
 #################
 
 Un bout de code démontrant comment utiliser :
-    1. La reconnaissance vocale
-    2. La détection automatique de la langue
-    2. La tranduction vocale
+    - La reconnaissance vocale
+    - La détection automatique de la langue
+    - La tranduction vocale
 
 **************
 APis utilisées
