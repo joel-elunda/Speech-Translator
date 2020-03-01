@@ -60,3 +60,5 @@ line = lines('texts/translate/essai.txt')
 lang = translator.detect(line)
 print(lang.lang)
 
+translate = translator.translate(line, src='en', dest='fr')
+print(translate.text)
