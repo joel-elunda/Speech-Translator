@@ -15,3 +15,20 @@ def lines(path):
     file.close()
 
     return line
+
+
+
+# Obtenir l'audio à partir du micro
+r = sr.Recognizer()
+with sr.Microphone() as source:
+    print("Dites quelque chose... !")
+    audio = r.listen(source)
+
+# Ecrire l'audio au format .raw
+with open("voices/voice.raw", "wb") as f:
+    f.write(audio.get_raw_data())
+
+# Ecrire l'audio au format .wav
+# Un fichier binaire
+with open("voices/voice.wav", "wb") as f:
+    f.write(audio.get_wav_data())
