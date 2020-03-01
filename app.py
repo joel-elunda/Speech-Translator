@@ -52,3 +52,11 @@ except sr.UnknownValueError:
     print("Google Speech Recognition n'a pas pu comprendre l'audio")
 except sr.RequestError as e:
     print("Requête échoué du service Google Speech Recognition : {0}".format(e))
+
+
+
+translator = Translator()
+line = lines('texts/translate/essai.txt')
+lang = translator.detect(line)
+print(lang.lang)
+
